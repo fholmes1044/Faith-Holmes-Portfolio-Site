@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --experimental-vm-modules",
+    "test": "react-scripts test --env=jsdom --transformIgnorePatterns=\"node_modules/(?!(babel-jest|@your-esm-module)/)\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
