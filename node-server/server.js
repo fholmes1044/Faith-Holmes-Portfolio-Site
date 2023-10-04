@@ -6,7 +6,7 @@ const app = express();
 const routes = require('./routes'); 
 
 app.use(bodyParser.json());
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 const corsOptions = {
     origin: 'http://localhost:3000', 
