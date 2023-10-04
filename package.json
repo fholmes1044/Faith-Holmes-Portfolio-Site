@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --experimental-vm-modules",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",
-    "babel-jest": "^29.7.0"
+    "babel-jest": "^29.7.0",
+    "esm": "^3.2.25"
   }
 }

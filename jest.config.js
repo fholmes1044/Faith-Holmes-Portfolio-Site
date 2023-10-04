@@ -6,6 +6,7 @@ export default {
     },
     testEnvironment: 'node',
     extensionsToTreatAsEsm: ['.jsx'],
+    setupFiles: ['esm'],
     globals: {
       'ts-jest': {
         useESM: true,
