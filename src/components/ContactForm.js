@@ -5,7 +5,7 @@ function ContactForm(){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [status, setStatus] = useState(null);
+    // const [status, setStatus] = useState(null);
 
     
     const handleContactFormSubmit = async (e) =>{
@@ -18,14 +18,14 @@ function ContactForm(){
               message,
             });
             if (response.data.status === "success") {
-                setStatus("Message Sent");
+                // setStatus("Message Sent");
                 resetForm();
               } else if (response.data.status === "fail") {
-                setStatus("Message failed to send");
+                // setStatus("Message failed to send");
               }
             } catch (error) {
               console.error(error);
-              setStatus("An error occurred");
+              // setStatus("An error occurred");
             }
     };
     const resetForm = () => {
